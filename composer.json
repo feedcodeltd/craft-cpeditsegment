@@ -1,8 +1,8 @@
 {
     "name": "tinydots/craft-cpeditsegment",
-    "description": "Quickly go to the correct page in the CP by adding a segment to the current element's URL",
+    "description": "Quickly go to the correct page in the CP by adding a segment to the current element's URL.",
     "type": "craft-plugin",
-    "version": "1.1.0",
+    "version": "0.1.0",
     "keywords": [
         "craft",
         "cms",
