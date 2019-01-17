@@ -1,0 +1,45 @@
+{
+    "name": "tinydots/craft-cpeditsegment",
+    "description": "Quickly go to the correct page in the CP by adding a segment to the current element's URL",
+    "type": "craft-plugin",
+    "version": "1.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin"
+    ],
+    "support": {
+        "docs": "https://github.com/tinydots/craft-cpeditsegment",
+        "issues": "https://github.com/tinydots/craft-cpeditsegment/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mike Pepper",
+            "email": "mdcpepper@gmail.com",
+            "homepage": "https://github.com/mdcpepper"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.1.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "tinydots\\cpeditsegment\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "CP Edit Segment",
+        "handle": "cpeditsegment",
+        "developer": "Tiny Dots",
+        "developerUrl": "https://www.github.com/tinydots",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://github.com/tinydots/craft-cpeditsegment/CHANGELOG.md",
+        "class": "tinydots\\cpeditsegment\\CpEditSegment"
+    }
+}
