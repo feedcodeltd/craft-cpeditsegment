@@ -37,8 +37,6 @@
         "handle": "cpeditsegment",
         "developer": "Tiny Dots",
         "developerUrl": "https://www.github.com/tinydots",
-        "hasCpSettings": false,
-        "hasCpSection": false,
         "changelogUrl": "https://github.com/tinydots/craft-cpeditsegment/CHANGELOG.md",
         "class": "tinydots\\cpeditsegment\\CpEditSegment"
     }

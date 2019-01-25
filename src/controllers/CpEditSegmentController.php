@@ -8,16 +8,15 @@ use yii\web\HttpException;
 
 class CpEditSegmentController extends Controller
 {
-    public $allowAnonymous = true;
-
     /**
      * @param string $elementUri
      * @throws HttpException
      */
-    public function actionRedirect(string $elementUri)
+    public function actionRedirect(string $elementUri = null)
     {
         /** @var ElementInterface $element */
-        $element = Craft::$app->getElements()->getElementByUri($elementUri);
+
+        $element = Craft::$app->getElements()->getElementByUri($elementUri ? $elementUri : '__home__');
 
         if (!$element || !$element->getCpEditUrl() || !$element->getIsEditable()) {
             throw new HttpException(404);

@@ -1,0 +1,28 @@
+{% extends "_layouts/cp" %}
+
+{% set plugin = craft.app.plugins.getPlugin('cpeditsegment') %}
+{% set trigger = plugin.getSettings().trigger %}
+{% set title = plugin.name %}
+
+{% block content %}
+    <h2>{{ "Bookmarklet"|t('cpeditsegment') }}</h2>
+    <div class="instructions">
+        <p>{{ "Click and drag this bookmarklet to your browser's bookmarks toolbar to edit pages with one click."|t('cpeditsegment') }}</p>
+    </div>
+
+    <p class="cpeditsegment-bookmarklet">
+        <a href="javascript:(function(){window.location.href = window.location.href.replace(/\/+$/, '') + '/{{ trigger }}';})()">{{ "Edit this page"|t|raw }}</a>
+    </p>
+{% endblock %}
+
+{% css %}
+    .cpeditsegment-bookmarklet a {
+        margin-top: 5px;
+        display:inline-block;
+        text-decoration: none;
+        background: #e7eef3;
+        padding: 10px;
+        border: 1px dashed #333f4d;
+        border-radius: 5px;
+    }
+{% endcss %}
