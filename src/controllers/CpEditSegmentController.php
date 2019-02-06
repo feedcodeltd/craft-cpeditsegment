@@ -1,7 +1,6 @@
 <?php
 namespace tinydots\cpeditsegment\controllers;
 
-use Craft;
 use craft\base\ElementInterface;
 use craft\web\Controller;
 use yii\web\HttpException;
@@ -13,18 +12,18 @@ use yii\web\HttpException;
 class CpEditSegmentController extends Controller
 {
     /**
-     * @param string $elementUri
+     * @param string|null $elementUri
      * @throws HttpException
      */
     public function actionRedirect(string $elementUri = null)
     {
-        /** @var ElementInterface $element */
-        $element = Craft::$app->getElements()->getElementByUri($elementUri ?: '__home__');
+        /** @var ElementInterface|null $element */
+        $element = \Craft::$app->getElements()->getElementByUri($elementUri ?: '__home__');
 
         if (!$element || !$element->getCpEditUrl() || !$element->getIsEditable()) {
             throw new HttpException(404);
         }
 
-        return $this->redirect($element->getCpEditUrl())->send();
+        $this->redirect($element->getCpEditUrl())->send();
     }
 }
