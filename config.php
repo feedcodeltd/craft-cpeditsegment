@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'trigger' => 'edit'
+//    'trigger' => 'edit'
 ];
