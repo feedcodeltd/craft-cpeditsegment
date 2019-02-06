@@ -6,6 +6,10 @@ use craft\base\ElementInterface;
 use craft\web\Controller;
 use yii\web\HttpException;
 
+/**
+ * Class CpEditSegmentController
+ * @package tinydots\cpeditsegment\controllers
+ */
 class CpEditSegmentController extends Controller
 {
     /**
@@ -15,8 +19,7 @@ class CpEditSegmentController extends Controller
     public function actionRedirect(string $elementUri = null)
     {
         /** @var ElementInterface $element */
-
-        $element = Craft::$app->getElements()->getElementByUri($elementUri ? $elementUri : '__home__');
+        $element = Craft::$app->getElements()->getElementByUri($elementUri ?: '__home__');
 
         if (!$element || !$element->getCpEditUrl() || !$element->getIsEditable()) {
             throw new HttpException(404);
