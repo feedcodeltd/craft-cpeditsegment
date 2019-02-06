@@ -1,5 +1,10 @@
 # CP Edit Segment Plugin for Craft CMS 3
 
+[![Build Status](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/badges/build.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/build-status/master) 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/?branch=master) 
+[![Code Coverage](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tinydots/craft-cpeditsegment/?branch=master) 
+[![License](https://poser.pugx.org/tinydots/craft-cpeditsegment/license)](https://packagist.org/packages/tinydots/craft-cpeditsegment)
+
 This plugin allows users with permission to quickly go to an element's control panel edit URL by adding a segment to 
 the end of its URL on the front-end.
 
